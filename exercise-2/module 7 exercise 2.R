@@ -31,12 +31,12 @@ b <- DescribeDifference(c(1:18), c(1:22))
 ### Bonus ###
 
 # Rewrite your `DescribeDifference` function to tell you the name of the vector which is longer
-DescribeDifference <- function(v1, v2) {
+DescribeDifference() <- function(v1, v2) {
   if (length(v1) > length(v2)) {
-    return (deparse(substitute(v1)))
+    return (deparse(1))
   }
-  return (deparse(substitute(v2)))
+  return (deparse(2))
 }
 
-c <- DescribeDifference(c(1:12), c(1:6))
-d <- DescribeDifference(c(1:18), c(1:22))
+f <- DescribeDifference(c(1:12), c(1:6))
+DescribeDifference(c(1:18), c(1:22))
